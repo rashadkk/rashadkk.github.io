@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Task 2</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width" initial="1">
-	<!-- Latest compiled and minified CSS -->
+  <title>Task 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial="1">
+  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -12,12 +12,49 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/Users/bititude/Project/rashadkk.github.io/task2.css">
 <!-- <style type="text/css">
+
+.circle-odd{
+
+ background-color: blue;
+ height: 100px;
+ width: 100px;
+ border-radius: 50px;
+}
+
+.circle-even{
+
+ background-color: green;
+ height: 100px;
+ width: 100px;
+ border-radius: 50px;
+}
+
+.labeldiv{
+display: flex; 
+flex-direction: column;
+align-content: center;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.labe{
+  font-size: 20px;
+  font-style: bold;
+}
+
+.navbackground ul li a:hover { 
+color: white;
+background-color: blue;
+
+}
 
 </style> -->
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-collapse">
 <div class="container-fluid " style="background-color: black;color: white;">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Dashboard</a>
@@ -29,15 +66,11 @@
       <li><a href="#">Help</a></li>
     </ul>
 
-<!-- <div style="float: right;margin-bottom: 15px;"><form>
-<input   type="text" name="search" placeholder="Search" style="height: 32px;border-radius: 5px;border-style:none;">
-<button type="button" class="btn text-success">Search</button>
-</form></div> -->
 <form class="navbar-form navbar-right" role="search">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search">
   </div>
-  <button class="btn btn-default">Search</button>
+  <button class="btn btn-success">Search</button>
 </form>
 </div>
 </nav>
@@ -49,7 +82,7 @@
   <div class="col-md-2 col-sm-2 " style="height:500px; background-color: lightgrey;">
   <nav>
   
-  <div>
+  <div class="navbackground">
   <ul class="nav">
     <li class="active"><a href="#">Overview</a></li>
     <li><a href="#">Reports</a></li>
@@ -58,7 +91,7 @@
   </ul>
   </div>
 
-  <div style="margin-top: 20px;">
+  <div class="navbackground" style="margin-top: 20px;">
   <ul class="nav">
     <li><a href="#">Nav item</a></li>
     <li><a href="#">Nav item again</a></li>
@@ -67,8 +100,8 @@
   </ul>
   </div>
 
-  <div style="margin-top: 20px;">
-     <ul class="nav">
+  <div class="navbackground" style="margin-top: 20px;">
+    <ul class="nav">
     <li><a href="#">Nav item again</a></li>
     <li><a href="#">one more nav</a></li>
     <li><a href="#">Another nav item</a></li>
@@ -79,39 +112,29 @@
 
 
 
-
-
-	
 <div class="col-md-10 col-sm-10 bg-light" style="height:300px">
 <h2>Dashboard</h2><hr style="margin-top: 2px;">
 
- <!-- <div class="row">
- <div class="col-md-3 col-sm-6 bg-white" style="height: 150px; display: flex;justify-content: center;">
-  <div style="background-color: blue;height: 100px; width: 100px;border-radius: 50px; "><p style="display:flex;justify-content:center; margin-top:110px;font-size: 20px;font-style: bold;">Label</p><p style="display:flex;justify-content:center;">somthing else</p></div></div> -->
+  <div class="col-md-3 col-sm-6 labeldiv">
+    <div class="circle-odd" "></div>
+    <p class="labe">Label</p><p>something else</p>
+  </div>
 
-	<div class="col-md-3 col-sm-6 " style="display: flex; flex-direction: column; align-content: center;flex-wrap: wrap;align-items: center;">
-	<div style="background-color: blue;height: 100px; width: 100px;border-radius: 50px;"></div><p style="font-size: 20px;font-style: bold;">Label</p><p>something else</p></div>
+  <div class="col-md-3 col-sm-6 labeldiv">
+    <div class="circle-even" "></div>
+    <p class="labe">Label</p><p>something else</p>
+  </div>
 
-	<!-- <div class="col-md-3 col-sm-6 bg-white" style="height: 150px; display: flex;justify-content: center;">
-  <div style="background-color: green;height: 100px; width: 100px;border-radius: 50px; "><p style="display:flex;justify-content:center; margin-top:110px;font-size: 20px;font-style: bold;">Label</p><p style="display:flex;justify-content:center;">somthing else</p></div></div>
+  <div class="col-md-3 col-sm-6 labeldiv">
+    <div class="circle-odd" "></div>
+    <p class="labe">Label</p><p>something else</p>
+  </div>
 
- -->
- <div class="col-md-3 col-sm-6 " style="display: flex; flex-direction: column; align-content: center;flex-wrap: wrap;align-items: center;">
-  <div style="background-color: green;height: 100px; width: 100px;border-radius: 50px;"></div><p style="font-size: 20px;font-style: bold;">Label</p><p>something else</p></div>
+  <div class="col-md-3 col-sm-6 labeldiv">
+    <div class="circle-even" "></div>
+    <p class="labe">Label</p><p>something else</p>
+  </div>
 
-  <div class="col-md-3 col-sm-6 " style="display: flex; flex-direction: column; align-content: center;flex-wrap: wrap;align-items: center;">
-  <div style="background-color: blue;height: 100px; width: 100px;border-radius: 50px;"></div><p style="font-size: 20px;font-style: bold;">Label</p><p>something else</p></div>
-
-<div class="col-md-3 col-sm-6 " style="display: flex; flex-direction: column; align-content: center;flex-wrap: wrap;align-items: center;">
-  <div style="background-color: green;height: 100px; width: 100px;border-radius: 50px;"></div><p style="font-size: 20px;font-style: bold;">Label</p><p>something else</p></div>
-
-
-	<!-- <div class="col-md-3 col-sm-6 bg-white" style="height: 150px; display: flex;justify-content: center;">
-  <div style="background-color: blue;height: 100px; width: 100px;border-radius: 50px; "><p style="display:flex;justify-content:center; margin-top:110px;font-size: 20px;font-style: bold;">Label</p><p style="display:flex;justify-content:center;">somthing else</p></div></div>
-
-	<div class="col-md-3 col-sm-6 bg-white" style="height: 150px; display: flex;justify-content: center;">
-  <div style="background-color: green;height: 100px; width: 100px;border-radius: 50px; "><p style="display:flex;justify-content:center; margin-top:110px;font-size: 20px;font-style: bold;">Label</p><p style="display:flex;justify-content:center;">somthing else</p></div></div> -->
-<!--  </div> -->
 
  <div class="row" style="padding-left: 15px;">
  <h3 style="margin-bottom: 1px;">Sectiontitle</h3><hr style="margin-top: 2px;">
