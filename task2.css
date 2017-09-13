@@ -1,0 +1,36 @@
+
+.circle-odd{
+
+ background-color: blue;
+ height: 100px;
+ width: 100px;
+ border-radius: 50px;
+}
+
+.circle-even{
+
+ background-color: green;
+ height: 100px;
+ width: 100px;
+ border-radius: 50px;
+}
+
+.labeldiv{
+display: flex; 
+flex-direction: column;
+align-content: center;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.labe{
+  font-size: 20px;
+  font-style: bold;
+}
+
+.navbackground ul li a:hover { 
+color: white;
+background-color: blue;
+
+}
